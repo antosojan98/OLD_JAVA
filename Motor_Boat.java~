@@ -1,0 +1,44 @@
+/**
+ * Auto Generated Java Class.
+ */
+import java.util.*;
+import java.lang.Math.*;
+public class Motor_Boat {
+  double eff;
+  double speed;
+  double distance;
+  double time;
+  double amount;
+  public Motor_Boat() { 
+    this.eff=0.0;
+    this.speed=0.0;
+    this.deistance=0.0;
+    this.time=0.0;
+    this.amount=0.0;
+  }
+  public void get_data(){
+  Scanner scan=new Scanner(System.in);
+  System.out.println("Enter boat speed");
+  speed=scan.nextDouble();
+  System.out.println("Enter boat time");
+  time=scan.nextDouble();
+  System.out.println("Enter boat fuel");
+  amount=scan.nextDouble();
+  
+  }
+  public void getfuel(){
+  amount=2.178*(Math.pow(speed,2))*time;
+  return amount;
+  }
+  public double getdistance(){
+  distance=speed*time;
+  return distance;
+  }
+  
+  public static void main(String[] args) { 
+    
+  }
+  
+  /* ADD YOUR CODE HERE */
+  
+}

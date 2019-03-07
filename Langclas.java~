@@ -1,0 +1,18 @@
+/**
+ * Auto Generated Java Class.
+ */
+import.lang.math
+public class Langclas {
+  
+  
+  public static void main(String[] args) { 
+    double x=10.8;
+    System.out.println(Math.ceil(x));
+     System.out.println(Math.floor(x));
+    
+    
+  }
+  
+  /* ADD YOUR CODE HERE */
+  
+}

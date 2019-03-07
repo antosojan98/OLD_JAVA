@@ -1,0 +1,49 @@
+/**
+ * Auto Generated Java Class.
+ */
+import java.util.*;
+public class Midterm_Q4 {
+  
+  
+  public static void main(String[] args) { 
+    int ticket,limit,total;
+    
+    Scanner scan=new Scanner(System.in);
+    
+    
+
+  
+    do
+    {
+      
+     System.out.println("Enter the number of tickets");
+    ticket=scan.nextInt();
+    if(ticket<=20)
+    { limit=100;
+       total=limit-ticket;
+       
+       System.out.println("Tickets remaining "+total);
+     
+      limit=(0+limit)-ticket;
+      ticket++;
+     
+    }
+    else
+      System.out.println("It is not allowed to buy more than 20");
+    }while(ticket<20);
+      
+       
+      
+      
+    
+    
+    
+    
+   
+      
+    
+  }
+  
+  /* ADD YOUR CODE HERE */
+  
+}

@@ -1,0 +1,31 @@
+/**
+ * Auto Generated Java Class.
+ */
+import java.util.*;
+public class Nov9Q1 {
+  
+  
+  public static void main(String[] args) { 
+    int [] numbers=new int[501];
+    
+    int count=0;
+    int remainder1=numbers[]%5;
+    int remainder2=numbers[]%3;
+    for(int i=0;i<=500;i++)
+    {
+      if(remainder1==0){
+        count++;
+        System.out.println("Number of times divisible be 5 "+count);
+      }
+      
+      if(remainder2==0){
+        count++;
+        System.out.println("Number of times divisible be 3 "+count);
+      }
+    }
+    
+  }
+  
+  /* ADD YOUR CODE HERE */
+  
+}

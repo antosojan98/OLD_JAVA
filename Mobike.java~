@@ -1,0 +1,54 @@
+/**
+ * Auto Generated Java Class.
+ */
+import java.util.*;
+public class Mobike {
+  int bno;
+  String name;
+  int days;
+  int charge;
+  
+  public Mobike() { 
+    /* YOUR CONSTRUCTOR CODE HERE*/
+  }
+  public void input(){
+  Scanner scan=new Scanner(System.in);
+  System.out.println("Enter your bike no.");
+  bno=scan.nextInt();
+  
+  Scanner scan1=new Scanner(System.in);
+  System.out.println("Enter your bike name");
+  name=scan1.nextLine();
+  
+  Scanner scan2=new Scanner(System.in);
+  System.out.println("Enter your days");
+  days=scan2.nextInt();
+  }
+  
+  public void compute(){
+    if(days<=5){
+      charge=days*500;
+    }
+    
+      if(days>=5 && days<=10){
+      charge=days*400;
+    }
+        if(days>10){
+      charge=days*200;
+    }
+  }
+  public void display(){
+  System.out.println("The charge is "+charge);
+  }
+  
+  public static void main(String[] args) { 
+    Mobike m=new Mobike();
+    m.input();
+    m.compute();
+    m.display();
+    
+  }
+  
+  /* ADD YOUR CODE HERE */
+  
+}
